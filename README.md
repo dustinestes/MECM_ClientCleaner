@@ -3,7 +3,7 @@
 <!-- PROJECT HEADER -->
 <br />
 <div align="center">
-  <a href="https://github.com/">
+  <!-- <a href="https://github.com/"> -->
     <img src="github/assets/project_main.jpg" alt="Logo" width="580" height="435">
   </a>
   <br><br><br>
@@ -19,13 +19,13 @@
 
   <p align="center" style="font-size: 1.1em; font-weight:bold">
     <br />
-    <a href="https://github.com/">Documentation</a>
+    <a href="https://github.com/dustinestes/MECM_ClientCleaner/blob/main/docs/README.md">Documentation</a>
     &nbsp;-&nbsp;
-    <a href="https://github.com/">Examples</a>
+    <a href="https://github.com/dustinestes/MECM_ClientCleaner/blob/main/docs/examples/README.md">Examples</a>
     &nbsp;-&nbsp;
-    <a href="https://github.com/">Bugs</a>
-    &nbsp;-&nbsp;
-    <a href="https://github.com/">Features</a>
+    <a href="https://github.com/dustinestes/MECM_ClientCleaner/issues">Issues</a>
+    <!-- &nbsp;-&nbsp;
+    <a href="https://github.com/">Features</a> -->
   </p>
 </div>
 
@@ -102,19 +102,25 @@ This application utilizes the following languages, libraries, packages, or other
 #### Go
 
 - [std](https://pkg.go.dev/std)
+- [bufio](https://pkg.go.dev/bufio)
+- [context](https://pkg.go.dev/context)
 - [fmt](https://pkg.go.dev/fmt)
 - [os](https://pkg.go.dev/os)
+- [os/exec](https://pkg.go.dev/os/exec)
+- [os/user](https://pkg.go.dev/os/user)
+- [regexp](https://pkg.go.dev/regexp)
+- [slices](https://pkg.go.dev/slices)
+- [strings](https://pkg.go.dev/strings)
 - [time](https://pkg.go.dev/time)
 - [x/sys](golang.org/x/sys)
+- [go-ole](https://github.com/go-ole/go-ole)
 
 #### PowerShell
 
 - Version: 5.1 or later
 - Modules: Microsoft.PowerShell.Management
 - Used For: WMI Namespace removal
-
-TODO: Find method to convert this to more native Go code and remove dependency on another language.
-
+- Cmdlets: Get-WmiObject, Remove-WmiObject
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -273,9 +279,10 @@ Location: C:\ProgramData\MECM Client Cleaner\Logs\YYYY-MM-DD_HHMMSS.log
 
 ## Roadmap
 
-See the [open issues](https://github.com/[Author]/[ProjectName]/issues) for a full list of proposed features (and known issues).
+See the [open issues](https://github.com/dustinestes/MECM_ClientCleaner/issues) for a full list of proposed features (and known issues).
 
 - [x] Convert the code from PowerShell to Go
+- [ ] Convert WMI cleanup from PowerShell to Windows API and native Go
 - [ ] Add in parameters for customized execution behavior
 - [ ] Add check for admin rights for user who executes file
 - [ ] Improve logging output to include error as parameter and process output based on this
@@ -304,8 +311,6 @@ This is the initial build of the tool using the original PowerShell code as a st
 
 ## Contribution
 
-TODO: All of this section
-
 If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
 
 1. Fork the Project
@@ -316,8 +321,8 @@ If you have a suggestion that would make this better, please fork the repo and c
 
 ### Top contributors:
 
-<a href="https://github.com/[Author]/[ProjectName]/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=[Author]/[ProjectName]" alt="contrib.rocks image" />
+<a href="https://github.com/dustinestes/MECM_ClientCleaner/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=dustinestes/MECM_ClientCleaner" alt="contrib.rocks image" />
 </a>
 
 <br>
@@ -326,35 +331,30 @@ If you have a suggestion that would make this better, please fork the repo and c
 
 ## License
 
-TODO: Determine license before creating Git Repo
 
-Distributed under the [LicenseName]. See `license.txt` for more information.
+Distributed under the GNU General Public LIcense v3.0. See `LICENSE` for more information.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Acknowledgments
 
-TODO: Determine if anything needs to be in this section
-
-Use this space to list resources you find helpful and would like to give credit to. I've included a few of my favorites to kick things off!
-
-* [Title](https://google.com)
+None
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/[Author]/[ProjectName].svg?style=for-the-badge
-[contributors-url]: https://github.com/[Author]/[ProjectName]/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/[Author]/[ProjectName].svg?style=for-the-badge
-[forks-url]: https://github.com/[Author]/[ProjectName]/network/members
-[stars-shield]: https://img.shields.io/github/stars/[Author]/[ProjectName].svg?style=for-the-badge
-[stars-url]: https://github.com/[Author]/[ProjectName]/stargazers
-[issues-shield]: https://img.shields.io/github/issues/[Author]/[ProjectName].svg?style=for-the-badge
-[issues-url]: https://github.com/[Author]/[ProjectName]/issues
-[license-shield]: https://img.shields.io/github/license/[Author]/[ProjectName].svg?style=for-the-badge
-[license-url]: https://github.com/[Author]/[ProjectName]/blob/master/LICENSE.txt
+[contributors-shield]: https://img.shields.io/github/contributors/dustinestes/MECM_ClientCleaner.svg?style=for-the-badge
+[contributors-url]: https://github.com/dustinestes/MECM_ClientCleaner/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/dustinestes/MECM_ClientCleaner.svg?style=for-the-badge
+[forks-url]: https://github.com/dustinestes/MECM_ClientCleaner/network/members
+[stars-shield]: https://img.shields.io/github/stars/dustinestes/MECM_ClientCleaner.svg?style=for-the-badge
+[stars-url]: https://github.com/dustinestes/MECM_ClientCleaner/stargazers
+[issues-shield]: https://img.shields.io/github/issues/dustinestes/MECM_ClientCleaner.svg?style=for-the-badge
+[issues-url]: https://github.com/dustinestes/MECM_ClientCleaner/issues
+[license-shield]: https://img.shields.io/github/license/dustinestes/MECM_ClientCleaner.svg?style=for-the-badge
+[license-url]: https://github.com/dustinestes/MECM_ClientCleaner/blob/master/LICENSE.txt
 [product-screenshot]: images/screenshot.png
 [Go]: https://img.shields.io/badge/Go-00ADD8?logo=Go&logoColor=white&style=for-the-badge
 [Go-url]: https://go.dev/
