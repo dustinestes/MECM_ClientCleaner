@@ -50,7 +50,7 @@
     - [Log Output](#log-output)
   - [Roadmap](#roadmap)
   - [Version History](#version-history)
-    - [0.0.0 - Codename: Andesite](#000---codename-andesite)
+    - [0.1.0 - Codename: Andesite](#010---codename-andesite)
       - [Changes](#changes)
   - [Contribution](#contribution)
     - [Top contributors:](#top-contributors)
@@ -297,7 +297,7 @@ See the [open issues](https://github.com/dustinestes/MECM_ClientCleaner/issues) 
 
 This provides a brief review of the last two versions and their respective changes. For a detailed list of all changes, see the versionhistory.md file in the documentation.
 
-### 0.0.0 - Codename: Andesite
+### 0.1.0 - Codename: Andesite
 
 This is the initial build of the tool using the original PowerShell code as a starting point to ensure that all functionality is mirrored from one to the other.
 
